@@ -1,12 +1,12 @@
-package com.htomcat.bio.servlet;
+package com.htomcat.servlet.bio;
 
-import com.htomcat.bio.http.HRequest;
-import com.htomcat.bio.http.HResponse;
-import com.htomcat.bio.http.HServlet;
+import com.htomcat.http.HRequest;
+import com.htomcat.http.HResponse;
+import com.htomcat.http.HServlet;
 
 import java.io.IOException;
 
-public class ServletDemo extends HServlet {
+public class ServletDemo2 extends HServlet {
     @Override
     public void doGet(HRequest request, HResponse response) throws IOException {
         this.doPost(request,response);
@@ -14,6 +14,6 @@ public class ServletDemo extends HServlet {
 
     @Override
     public void doPost(HRequest request, HResponse response) throws IOException {
-        response.write("this is my tomcat servlet demo");
+        response.write("this is my tomcat servlet demo2");
     }
 }
